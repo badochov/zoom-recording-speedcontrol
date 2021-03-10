@@ -1,0 +1,21 @@
+{
+    "name": "Zoom Recording Speedcontrols",
+    "version": "1",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.zoom.us/rec/play/*"
+            ],
+            "js": [
+                "contentscript.js"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs"
+    ]
+}
